@@ -1,0 +1,19 @@
+@media screen and (max-width: 613px) {
+    .search {
+        display: none;
+    }
+
+    nav > ul li:not(:first-child) {
+        display: none;
+    }
+
+    .logo {
+        --ig-logo-width: 103px;
+        justify-content: space-between;
+        width: calc(50% + var(--ig-logo-width) / 2);
+    }
+
+    .logo > hr {
+        display: none;
+    }
+}
