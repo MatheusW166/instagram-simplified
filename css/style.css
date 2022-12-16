@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray-50: #fafafa;
+    --gray-100: #efefef;
+    --gray-200: #dbdbdb;
+    --gray-300: #c7c7c7;
+    --gray-400: #979797;
+    --gray-500: #8e8e8e;
+    --gray-700: #262626;
+    --blue-400: #139ef2;
+    --content-width: 935px;
+}
+
+body {
+    background-color: var(--gray-50);
+    font-family: "Roboto", sans-serif;
+}
+
+ion-icon {
+    font-size: 22px;
+}
+
+/* ================================================ */
+/* Cabeçalho */
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+header > div {
+    max-width: var(--content-width);
+    height: 54px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > hr {
+    height: 22px;
+    background-color: var(--gray-200);
+    margin: 0 10px;
+}
+
+.instagram-img {
+    margin-top: 10px;
+}
+
+.search {
+    width: 215px;
+    height: 28px;
+    display: flex;
+}
+
+.search > input {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 3px;
+    outline: none;
+    flex: 1;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.search > input::placeholder {
+    text-align: center;
+    color: var(--gray-400);
+}
+
+nav > ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* FIM Cabeçalho */
+/* ================================================ */
+
+/* ================================================ */
+/* Layout principal */
+main {
+    max-width: var(--content-width);
+    margin: 34px auto;
+    display: flex;
+    gap: 28px;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 614px;
+    gap: 25px;
+}
+
+.main-right {
+    flex: 1;
+}
+/* FIM Layout principal */
+/* ================================================ */
+
+/* ================================================ */
+/* Main left */
+
+/* Stories */
+.stories {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 3px;
+    display: flex;
+    padding: 16px;
+    gap: 14px;
+    overflow: hidden;
+    position: relative;
+}
+
+.stories > object {
+    position: absolute;
+    z-index: 2;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--gray-700);
+    text-align: center;
+    width: 66px;
+}
+
+.story > p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.story-ring {
+    position: relative;
+    height: 66px;
+    width: 66px;
+}
+
+.story-ring > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.story-ring > img:last-child {
+    width: 100%;
+}
+
+/* Pubs */
+.pubs {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.pubs article {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 3px;
+    border: 1px solid var(--gray-200);
+}
+
+.pubs .my-user {
+    gap: 14px;
+    margin: 0;
+    padding: 15px 17px;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.pubs .my-user > ion-icon {
+    margin-left: auto;
+    font-size: 16px;
+}
+
+.pubs .my-user > img {
+    width: 32px;
+    height: 32px;
+}
+
+.pubs article > img {
+    width: 100%;
+    max-height: 612px;
+    object-fit: cover;
+}
+
+.bottom {
+    padding: 14px 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bottom > .actions {
+    display: flex;
+    gap: 14px;
+}
+
+.bottom > .actions ion-icon:last-child {
+    margin-left: auto;
+}
+
+.bottom > .likes {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 300;
+}
+
+.bottom > .likes a {
+    font-weight: 500;
+}
+
+.bottom > .likes img {
+    width: 20px;
+    height: 20px;
+}
+
+/* FIM Main left */
+/* ================================================ */
+
+/* ================================================ */
+/* Main right */
+.my-user {
+    margin: 26px 0 22px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray-700);
+}
+
+.my-user > div p:last-child {
+    font-weight: 300;
+    color: var(--gray-500);
+    margin-top: 2px;
+}
+
+.suggestions {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.suggestions > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestions h6 {
+    color: var(--gray-500);
+}
+
+.suggestions button {
+    color: var(--gray-700);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+}
+
+.suggestion > .avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+}
+
+.suggestion > div p:first-child {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.suggestion > div p:last-child {
+    font-weight: 400;
+    color: var(--gray-500);
+}
+
+.suggestion > button {
+    margin-left: auto;
+    color: var(--blue-400);
+}
+
+.about {
+    margin-top: 36px;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--gray-300);
+}
+
+.about > ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.about > ul a {
+    line-height: 13px;
+}
+
+.about > ul a:hover {
+    line-height: 13px;
+    text-decoration: underline;
+}
+/* FIM Main right */
+/* ================================================ */
