@@ -220,7 +220,8 @@ main {
     height: 32px;
 }
 
-.pubs article > img {
+.pubs article > img,
+.pubs article > video {
     max-width: 100%;
     max-height: 612px;
 }
