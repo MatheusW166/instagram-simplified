@@ -106,6 +106,7 @@ main {
     display: flex;
     gap: 28px;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .main-left {
@@ -117,8 +118,9 @@ main {
 }
 
 .main-right {
-    flex: 1;
     margin-top: 55px;
+    position: sticky;
+    top: 55px;
 }
 /* FIM Layout principal */
 /* ================================================ */
@@ -192,7 +194,7 @@ main {
 .pubs {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 60px;
 }
 
 .pubs article {
@@ -280,6 +282,7 @@ main {
     font-weight: 300;
     color: var(--gray-500);
     margin-top: 2px;
+    font-size: 13px;
 }
 
 .suggestions {

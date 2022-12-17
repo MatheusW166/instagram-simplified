@@ -4,6 +4,7 @@
     }
 
     nav > ul li:not(:first-child),
+    .stories > object,
     .logo > hr,
     .search {
         display: none;
@@ -15,8 +16,7 @@
         width: calc(50% + var(--ig-logo-width) / 2);
     }
 
-    .main-left,
-    .pubs {
+    .main-left {
         gap: 0;
     }
 
