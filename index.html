@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InstagramClone</title>
+    <title>Instagram</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -26,7 +26,7 @@
             <div class="search">
                 <input type="text" placeholder="Pesquisar" />
             </div>
-            <nav>
+            <nav class="top-nav">
                 <ul>
                     <li><a href=""><ion-icon name="paper-plane-outline"></ion-icon></a></li>
                     <li><a href=""><ion-icon name="compass-outline"></ion-icon></a></li>
@@ -40,6 +40,15 @@
         <div class="main-left">
             <section class="stories">
                 <object data="./assets/chevron-forward-circle_1.svg" type=""></object>
+                <div class="story">
+                    <a href="">
+                        <div class="story-ring">
+                            <img class="avatar" src="./assets/piruleta.png" />
+                            <img src="./assets/stories_background.jpg" />
+                        </div>
+                    </a>
+                    <p><a href="">Seu history</a></p>
+                </div>
                 <div class="story">
                     <a href="">
                         <div class="story-ring">
@@ -92,7 +101,7 @@
                             <img src="./assets/stories_background.jpg" />
                         </div>
                     </a>
-                    <p><a href="">kleiton</a></p>
+                    <p><a href="">kleiton.of.war</a></p>
                 </div>
                 <div class="story">
                     <a href="">
@@ -116,49 +125,57 @@
             <section class="pubs">
                 <article>
                     <div class="my-user">
-                        <img class="avatar" src="./assets/meowed_1.png" />
-                        <p>meowed</p>
-                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                        <a href=""><img class="avatar" src="./assets/imperador.png" /></a>
+                        <p><a href="">palpatine.oficial</a></p>
+                        <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
                     </div>
-                    <img src="./assets/gato-telefone_1.png" />
+                    <img src="./assets/palpatine.jpg" />
                     <div class="bottom">
                         <div class="actions">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <ion-icon name="chatbubble-outline"></ion-icon>
-                            <ion-icon name="paper-plane-outline"></ion-icon>
-                            <ion-icon name="bookmark-outline"></ion-icon>
+                            <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
                         </div>
                         <div class="likes">
-                            <img class="avatar" src="./assets/respondeai_1.png" />
-                            <p>Curtido por <a href="">respondeai</a> e <a href="">outras 101.523 pessoas</a></p>
+                            <a href=""><img class="avatar" src="./assets/anakin.jpg" /></a>
+                            <p>Curtido por <a href="">anakin.skywalker</a> e <a href="">outras 1.987.500 pessoas</a></p>
                         </div>
+                        <div class="caption">
+                            <p>
+                                <a href="">palpatine.oficial</a>
+                                <span>
+                                    Não existe UM Lorde Sith vivo mais honesto do que eu!
+                                    <a class="mention" href="">
+                                        #votepalpatine
+                                    </a> <a class="mention" href="">
+                                        #pelademocracia
+                                    </a>
+                                    <a class="mention" href="">
+                                        #liberdade
+                                    </a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="comments">
+                            <p class="see-more"><a href="">Ver todos os 665.700 comentários</a></p>
+                        </div>
+                        <div class="posted-at">
+                            <p>HÁ 5 MINUTOS</p>
+                            <p><a href="">Ver tradução</a></p>
+                        </div>
+                    </div>
+                    <div class="post-a-comment">
+                        <a href=""><ion-icon name="happy-outline"></ion-icon></a>
+                        <input type="text" placeholder="Digite algo"></input>
+                        <button>Publicar</button>
                     </div>
                 </article>
                 <article>
                     <div class="my-user">
-                        <img class="avatar" src="./assets/adorableanimals_1.png" />
-                        <p>adorable_animals</p>
-                        <ion-icon name="ellipsis-horizontal"></ion-icon>
-                    </div>
-                    <img src="./assets/dog_1.png" />
-                    <div class="bottom">
-                        <div class="actions">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <ion-icon name="chatbubble-outline"></ion-icon>
-                            <ion-icon name="paper-plane-outline"></ion-icon>
-                            <ion-icon name="bookmark-outline"></ion-icon>
-                        </div>
-                        <div class="likes">
-                            <img class="avatar" src="./assets/respondeai_1.png" />
-                            <p>Curtido por <a href="">respondeai</a> e <a href="">outras 101.523 pessoas</a></p>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div class="my-user">
-                        <img class="avatar" src="./assets/kratos.jpg" />
-                        <p>kleiton</p>
-                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                        <a href=""><img class="avatar" src="./assets/kratos.jpg" /></a>
+                        <p><a href="">kleiton.of.war</a></p>
+                        <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
                     </div>
                     <video autoplay loop muted>
                         <source src="assets/video.mp4" type="video/mp4">
@@ -167,24 +184,134 @@
                     </video>
                     <div class="bottom">
                         <div class="actions">
-                            <ion-icon name="heart-outline"></ion-icon>
-                            <ion-icon name="chatbubble-outline"></ion-icon>
-                            <ion-icon name="paper-plane-outline"></ion-icon>
-                            <ion-icon name="bookmark-outline"></ion-icon>
+                            <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
                         </div>
                         <div class="likes">
-                            <img class="avatar" src="./assets/respondeai_1.png" />
-                            <p>Curtido por <a href="">respondeai</a> e <a href="">outras 101.523 pessoas</a></p>
+                            <a href=""><img class="avatar" src="./assets/odin.webp" /></a>
+                            <p>Curtido por <a href="">odin_father69</a> e <a href="">outros 7.568 deuses</a></p>
                         </div>
+                        <div class="caption">
+                            <p>
+                                <a href="">kleiton.of.war</a>
+                                <span>
+                                    Atreus 100% pistola brincando com as gaivotas no
+                                    riacho da
+                                    <a class="mention" href="">
+                                        @freya
+                                    </a>
+                                    heauehauehaueh
+                                </span>
+                            </p>
+                        </div>
+                        <div class="comments">
+                            <p class="see-more"><a href="">Ver todos os 14 comentários</a></p>
+                            <div class="comment">
+                                <p><a href="">freya</a><span>Mais uma vez vocês dois matando meus animais
+                                        &#128580;</span>
+                                </p>
+                                <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                            </div>
+                            <div class="comment">
+                                <p><a href="">thor_odin.son</a><span>⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡</span>
+                                </p>
+                                <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                        <div class="posted-at">
+                            <p>HÁ 2 HORAS</p>
+                            <p><a href="">Ver tradução</a></p>
+                        </div>
+                    </div>
+                    <div class="post-a-comment">
+                        <a href=""><ion-icon name="happy-outline"></ion-icon></a>
+                        <input type="text" placeholder="Digite algo"></input>
+                        <button>Publicar</button>
+                    </div>
+                </article>
+                <article>
+                    <div class="my-user">
+                        <a href=""><img class="avatar" src="./assets/meowed_1.png" /></a>
+                        <p><a href="">meowed</a></p>
+                        <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+                    </div>
+                    <img src="./assets/gato-telefone_1.png" />
+                    <div class="bottom">
+                        <div class="actions">
+                            <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
+                        </div>
+                        <div class="likes">
+                            <a href=""> <img class="avatar" src="./assets/naruto.jpg" /></a>
+                            <p>Curtido por <a href="">uzumaki.naruto</a> e <a href="">outras 47.000 pessoas</a></p>
+                        </div>
+                        <div class="caption">
+                            <p>
+                                <a href="">meowed</a>
+                                <span>
+                                    Os gatos vão dominar o mundo?
+                                </span>
+                            </p>
+                        </div>
+                        <div class="posted-at">
+                            <p>HÁ 37 SEGUNDOS</p>
+                            <p><a href="">Ver tradução</a></p>
+                        </div>
+                    </div>
+                    <div class="post-a-comment">
+                        <a href=""><ion-icon name="happy-outline"></ion-icon></a>
+                        <input type="text" placeholder="Digite algo"></input>
+                        <button>Publicar</button>
+                    </div>
+                </article>
+                <article>
+                    <div class="my-user">
+                        <a href=""><img class="avatar" src="./assets/adorableanimals_1.png" /></a>
+                        <p><a href="">adorable_animals</a></p>
+                        <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+                    </div>
+                    <img src="./assets/dog_1.png" />
+                    <div class="bottom">
+                        <div class="actions">
+                            <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
+                            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
+                        </div>
+                        <div class="likes">
+                            <a href=""> <img class="avatar" src="./assets/memeriagourmet_1.png" /></a>
+                            <p>Curtido por <a href="">memeriagourmet</a> e <a href="">outras 17 pessoas</a></p>
+                        </div>
+                        <div class="caption">
+                            <p>
+                                <a href="">adorable_animals</a>
+                                <span>
+                                    Soninho da beleza &#129392; &#129392;
+                                </span>
+                            </p>
+                        </div>
+                        <div class="posted-at">
+                            <p>HÁ 1 DIA</p>
+                            <p><a href="">Ver tradução</a></p>
+                        </div>
+                    </div>
+                    <div class="post-a-comment">
+                        <a href=""><ion-icon name="happy-outline"></ion-icon></a>
+                        <input type="text" placeholder="Digite algo"></input>
+                        <button>Publicar</button>
                     </div>
                 </article>
             </section>
         </div>
         <div class="main-right">
             <section class="my-user">
-                <img class="avatar" src="./assets/piruleta.png" />
+                <a href=""><img class="avatar" src="./assets/piruleta.png" /></a>
                 <div>
-                    <p>bixo.piruleta</p>
+                    <p><a href="">bixo.piruleta</a></p>
                     <p>Bixo Piruleta</p>
                 </div>
             </section>
@@ -194,41 +321,41 @@
                     <button>Ver tudo</button>
                 </div>
                 <div class="suggestion">
-                    <img class="avatar" src="./assets/badvibesmemes_1.png" />
+                    <a href=""><img class="avatar" src="./assets/badvibesmemes_1.png" /></a>
                     <div>
-                        <p>badvibesmemes</p>
+                        <p><a href="">badvibesmemes</a></p>
                         <p>Segue você</p>
                     </div>
                     <button>Seguir</button>
                 </div>
                 <div class="suggestion">
-                    <img class="avatar" src="./assets/chibirdart_1.png" />
+                    <a href=""><img class="avatar" src="./assets/chibirdart_1.png" /></a>
                     <div>
-                        <p>chibirdart</p>
+                        <p><a href="">chibirdart</a></p>
                         <p>Segue você</p>
                     </div>
                     <button>Seguir</button>
                 </div>
                 <div class="suggestion">
-                    <img class="avatar" src="./assets/razoesparaacreditar_1.png" />
+                    <a href=""><img class="avatar" src="./assets/razoesparaacreditar_1.png" /></a>
                     <div>
-                        <p>razoesparaacreditar</p>
+                        <p><a href="">razoesparaacreditar</a></p>
                         <p>Novo no Instagram</p>
                     </div>
                     <button>Seguir</button>
                 </div>
                 <div class="suggestion">
-                    <img class="avatar" src="./assets/adorableanimals_1.png" />
+                    <a href=""><img class="avatar" src="./assets/adorableanimals_1.png" /></a>
                     <div>
-                        <p>adorable_animals</p>
+                        <p><a href="">adorable_animals</a></p>
                         <p>Segue você</p>
                     </div>
                     <button>Seguir</button>
                 </div>
                 <div class="suggestion">
-                    <img class="avatar" src="./assets/smallcutecats_1.png" />
+                    <a href=""><img class="avatar" src="./assets/smallcutecats_1.png" /></a>
                     <div>
-                        <p>smallcutecats</p>
+                        <p><a href="">smallcutecats</a></p>
                         <p>Segue você</p>
                     </div>
                     <button>Seguir</button>
@@ -255,11 +382,13 @@
         </div>
     </main>
     <nav class="bottom-nav">
-        <a href=""><ion-icon name="home-outline"></ion-icon></a>
-        <a href=""><ion-icon name="search-outline"></ion-icon></a>
-        <a href=""><ion-icon name="add-circle-outline"></ion-icon></a>
-        <a href=""><ion-icon name="heart-outline"></ion-icon></a>
-        <a href=""><ion-icon name="person-outline"></ion-icon></a>
+        <ul>
+            <li><a href=""><ion-icon name="home-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="search-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="heart-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="person-outline"></ion-icon></a></li>
+        </ul>
     </nav>
 </body>
 

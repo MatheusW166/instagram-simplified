@@ -3,11 +3,8 @@
         margin: 0 auto 54px auto;
     }
 
-    nav > ul li:not(:first-child),
-    .stories > object,
-    .logo > hr,
-    .search {
-        display: none;
+    .main-left {
+        gap: 0;
     }
 
     .logo {
@@ -16,22 +13,46 @@
         width: calc(50% + var(--ig-logo-width) / 2);
     }
 
-    .main-left {
-        gap: 0;
+    .top-nav > ul li:not(:first-child),
+    .stories > object,
+    .logo > hr,
+    .search {
+        display: none;
+    }
+
+    .stories {
+        border: none;
+        background-color: var(--gray-50);
+    }
+
+    .pubs article {
+        border-radius: 0;
+        border-right: none;
+        border-left: none;
+    }
+
+    .pubs article:last-child {
+        border-bottom: none;
     }
 
     .bottom-nav {
-        display: flex;
+        display: block;
         position: fixed;
         bottom: 0;
         left: 0;
+        z-index: 1;
         width: 100%;
-        background-color: var(--white);
-        border-top: 1px solid var(--gray-200);
-        padding: 0 17px;
         height: 54px;
+        padding: 0 17px;
+        border-top: 1px solid var(--gray-200);
+        background-color: var(--white);
+    }
+
+    .bottom-nav ul {
+        display: flex;
+        height: 100%;
+        width: 100%;
         align-items: center;
         justify-content: space-between;
-        z-index: 1;
     }
 }

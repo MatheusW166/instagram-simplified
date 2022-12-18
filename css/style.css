@@ -40,7 +40,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
 }
 
@@ -212,12 +212,15 @@ main {
     border-bottom: 1px solid var(--gray-100);
 }
 
-.pubs .my-user > ion-icon {
+.pubs .my-user a:last-child {
     margin-left: auto;
+}
+
+.pubs .my-user ion-icon {
     font-size: 16px;
 }
 
-.pubs .my-user > img {
+.pubs .my-user > a img {
     width: 32px;
     height: 32px;
 }
@@ -232,15 +235,27 @@ main {
     padding: 14px 17px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
+}
+
+.bottom > div:not(:first-child) {
+    font-weight: 400;
+    color: var(--gray-700);
+    line-height: 130%;
+    font-size: 14px;
+}
+
+.bottom a {
+    font-weight: 500;
 }
 
 .bottom > .actions {
     display: flex;
     gap: 14px;
+    margin-bottom: 6px;
 }
 
-.bottom > .actions ion-icon:last-child {
+.bottom > .actions a:last-child {
     margin-left: auto;
 }
 
@@ -248,18 +263,93 @@ main {
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 14px;
-    color: var(--black);
-    font-weight: 300;
-}
-
-.bottom > .likes a {
-    font-weight: 500;
 }
 
 .bottom > .likes img {
     width: 20px;
     height: 20px;
+}
+
+.bottom p > a:has(~ span) {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.bottom .comments {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bottom .comments .see-more > a {
+    color: var(--gray-500);
+    font-weight: 400;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.bottom a.mention {
+    color: #00376b;
+    font-weight: normal;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.comment ion-icon {
+    font-size: 14px;
+}
+
+.posted-at {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.posted-at p:last-child {
+    font-size: 12px;
+}
+
+.posted-at p:first-child {
+    font-size: 10px;
+    color: var(--gray-500);
+}
+
+.post-a-comment {
+    display: flex;
+    padding: 0 17px;
+    align-items: center;
+    height: 54px;
+    border-top: 1px solid var(--gray-200);
+}
+
+.post-a-comment > input {
+    flex: 1;
+    resize: none;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    color: var(--gray-700);
+}
+
+.post-a-comment > input::placeholder {
+    color: var(--gray-500);
+}
+
+.post-a-comment > button {
+    height: 100%;
+    color: #b2dffc;
+    font-weight: 600;
+}
+
+.post-a-comment > button:hover {
+    color: #0095f6;
 }
 
 /* FIM Main left */
@@ -316,7 +406,7 @@ main {
     align-items: center;
 }
 
-.suggestion > .avatar {
+.suggestion > a .avatar {
     width: 32px;
     height: 32px;
     margin-right: 11px;
@@ -326,6 +416,7 @@ main {
     font-size: 14px;
     margin-bottom: 6px;
 }
+
 .suggestion > div p:last-child {
     font-weight: 400;
     color: var(--gray-500);
@@ -358,4 +449,28 @@ main {
     text-decoration: underline;
 }
 /* FIM Main right */
+/* ================================================ */
+
+/* ================================================ */
+/* Ajustes de UX */
+a:active,
+button:active {
+    opacity: 0.6;
+}
+
+.actions a,
+nav > ul li {
+    transition: ease 0.2s;
+}
+
+.actions a:hover,
+nav > ul li:hover {
+    transform: scale(1.05);
+}
+
+.actions a:active,
+nav > ul li:active {
+    transform: scale(0.95);
+}
+/* FIM Ajustes de UX */
 /* ================================================ */
