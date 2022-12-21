@@ -10,7 +10,10 @@
     --gray-400: #979797;
     --gray-500: #8e8e8e;
     --gray-700: #262626;
+    --blue-50: #b2dffc;
     --blue-400: #139ef2;
+    --blue-500: #0095f6;
+    --blue-800: #00376b;
     --content-width: 935px;
 }
 
@@ -289,7 +292,7 @@ main {
 }
 
 .bottom a.mention {
-    color: #00376b;
+    color: var(--blue-800);
     font-weight: normal;
 }
 
@@ -344,12 +347,12 @@ main {
 
 .post-a-comment > button {
     height: 100%;
-    color: #b2dffc;
+    color: var(--blue-50);
     font-weight: 600;
 }
 
 .post-a-comment > button:hover {
-    color: #0095f6;
+    color: var(--blue-500);
 }
 
 /* FIM Main left */
