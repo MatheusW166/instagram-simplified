@@ -127,27 +127,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-a {
+a,
+li {
   text-decoration: none;
   color: inherit;
   line-height: 0;
-}
-li {
-  line-height: 0;
-}
-hr {
-  border: none;
-  width: 1px;
-  height: 100%;
-  background-color: #2e2e2e;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-* {
-  box-sizing: border-box;
 }
