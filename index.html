@@ -14,382 +14,393 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <div class="logo">
-                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-                <hr />
-                <div class="instagram-img">
-                    <a href=""><img src="./assets/logo.png" alt="insta" /></a>
+    <div id="root">
+        <header>
+            <div>
+                <div class="logo">
+                    <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    <hr />
+                    <div class="instagram-img">
+                        <a href=""><img src="./assets/logo.png" alt="insta" /></a>
+                    </div>
                 </div>
+                <div class="search">
+                    <input type="text" placeholder="Pesquisar" />
+                </div>
+                <div class="switch-theme">
+                    <input type="checkbox" id="switch-btn">
+                    <label for="switch-btn">
+                        <ion-icon name="sunny-outline"></ion-icon>
+                        <ion-icon name="moon-outline"></ion-icon>
+                    </label>
+                </div>
+                <nav class="top-nav">
+                    <ul>
+
+                        <li><a href=""><ion-icon name="paper-plane-outline"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="compass-outline"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="heart-outline"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="person-outline"></ion-icon></a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="search">
-                <input type="text" placeholder="Pesquisar" />
-            </div>
-            <nav class="top-nav">
-                <ul>
-                    <li><a href=""><ion-icon name="paper-plane-outline"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="compass-outline"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="heart-outline"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="person-outline"></ion-icon></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="main-left">
-            <section class="stories">
-                <object data="./assets/chevron-forward-circle_1.svg" type=""></object>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/piruleta.png" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">Seu history</a></p>
-                </div>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/cj.jpeg" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">cjmodafoca</a></p>
-                </div>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/nathanwpylestrangeplanet_1.png" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">nathanwpylestrangeplanet</a></p>
-                </div>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/naruto.jpg" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">uzumaki.naruto</a></p>
-                </div>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/wawawiwacomicsa_1.png" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">wawawiwacomicsa</a></p>
-                </div>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/filosofopiton.jpeg" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">filosofo.python</a></p>
-                </div>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/kratos.jpg" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">kleiton.of.war</a></p>
-                </div>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/filomoderna_1.png" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">filomoderna</a></p>
-                </div>
-                <div class="story">
-                    <a href="">
-                        <div class="story-ring">
-                            <img class="avatar" src="./assets/memeriagourmet_1.png" />
-                            <img src="./assets/stories_background.jpg" />
-                        </div>
-                    </a>
-                    <p><a href="">memeriago.</a></p>
-                </div>
-            </section>
-            <section class="pubs">
-                <article>
-                    <div class="my-user">
-                        <a href=""><img class="avatar" src="./assets/imperador.png" /></a>
-                        <p><a href="">palpatine.oficial</a></p>
-                        <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+        </header>
+        <div class="content">
+            <main>
+                <section class="stories">
+                    <object data="./assets/chevron-forward-circle_1.svg" type=""></object>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/piruleta.png" />
+                                <img src="./assets/stories_background.jpg" />
+                            </div>
+                        </a>
+                        <p><a href="">Seu history</a></p>
                     </div>
-                    <img src="./assets/palpatine.jpg" />
-                    <div class="bottom">
-                        <div class="actions">
-                            <a href=""><ion-icon name="heart-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
-                        </div>
-                        <div class="likes">
-                            <a href=""><img class="avatar" src="./assets/anakin.jpg" /></a>
-                            <p>Curtido por <a href="">anakin.skywalker</a> e <a href="">outras 1.987.500 pessoas</a></p>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <a href="">palpatine.oficial</a>
-                                <span>
-                                    Não existe UM Lorde Sith vivo mais honesto do que eu!
-                                    <a class="mention" href="">
-                                        #votepalpatine
-                                    </a> <a class="mention" href="">
-                                        #pelademocracia
-                                    </a>
-                                    <a class="mention" href="">
-                                        #liberdade
-                                    </a>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="comments">
-                            <p class="see-more"><a href="">Ver todos os 665.700 comentários</a></p>
-                        </div>
-                        <div class="posted-at">
-                            <p>HÁ 5 MINUTOS</p>
-                            <p><a href="">Ver tradução</a></p>
-                        </div>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/cj.jpeg" />
+                                <img src="./assets/stories_background.jpg" />
+                            </div>
+                        </a>
+                        <p><a href="">cjmodafoca</a></p>
                     </div>
-                    <div class="post-a-comment">
-                        <a href=""><ion-icon name="happy-outline"></ion-icon></a>
-                        <input type="text" placeholder="Digite algo"></input>
-                        <button>Publicar</button>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/nathanwpylestrangeplanet_1.png" />
+                                <img src="./assets/stories_background.jpg" />
+                            </div>
+                        </a>
+                        <p><a href="">nathanwpylestrangeplanet</a></p>
                     </div>
-                </article>
-                <article>
-                    <div class="my-user">
-                        <a href=""><img class="avatar" src="./assets/kratos.jpg" /></a>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/naruto.jpg" />
+                                <img src="./assets/stories_background.jpg" />
+                            </div>
+                        </a>
+                        <p><a href="">uzumaki.naruto</a></p>
+                    </div>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/wawawiwacomicsa_1.png" />
+                                <img src="./assets/stories_background.jpg" />
+                            </div>
+                        </a>
+                        <p><a href="">wawawiwacomicsa</a></p>
+                    </div>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/filosofopiton.jpeg" />
+                                <img src="./assets/stories_background.jpg" />
+                            </div>
+                        </a>
+                        <p><a href="">filosofo.python</a></p>
+                    </div>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/kratos.jpg" />
+                                <img src="./assets/stories_background.jpg" />
+                            </div>
+                        </a>
                         <p><a href="">kleiton.of.war</a></p>
-                        <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
                     </div>
-                    <video autoplay loop muted>
-                        <source src="assets/video.mp4" type="video/mp4">
-                        <source src="assets/video.ogv" type="video/ogv">
-                        Não suportado.
-                    </video>
-                    <div class="bottom">
-                        <div class="actions">
-                            <a href=""><ion-icon name="heart-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
-                        </div>
-                        <div class="likes">
-                            <a href=""><img class="avatar" src="./assets/odin.webp" /></a>
-                            <p>Curtido por <a href="">odin_father69</a> e <a href="">outros 7.568 deuses</a></p>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <a href="">kleiton.of.war</a>
-                                <span>
-                                    Atreus 100% pistola brincando com as gaivotas no
-                                    riacho da
-                                    <a class="mention" href="">
-                                        @freya
-                                    </a>
-                                    heauehauehaueh
-                                </span>
-                            </p>
-                        </div>
-                        <div class="comments">
-                            <p class="see-more"><a href="">Ver todos os 14 comentários</a></p>
-                            <div class="comment">
-                                <p><a href="">freya</a><span>Mais uma vez vocês dois matando meus animais
-                                        &#128580;</span>
-                                </p>
-                                <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/filomoderna_1.png" />
+                                <img src="./assets/stories_background.jpg" />
                             </div>
-                            <div class="comment">
-                                <p><a href="">thor_odin.son</a><span>⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡</span>
-                                </p>
+                        </a>
+                        <p><a href="">filomoderna</a></p>
+                    </div>
+                    <div class="story">
+                        <a href="">
+                            <div class="story-ring">
+                                <img class="avatar" src="./assets/memeriagourmet_1.png" />
+                                <img src="./assets/stories_background.jpg" />
+                            </div>
+                        </a>
+                        <p><a href="">memeriago.</a></p>
+                    </div>
+                </section>
+                <section class="pubs">
+                    <article>
+                        <div class="my-user">
+                            <a href=""><img class="avatar" src="./assets/imperador.png" /></a>
+                            <p><a href="">palpatine.oficial</a></p>
+                            <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+                        </div>
+                        <img src="./assets/palpatine.jpg" />
+                        <div class="bottom">
+                            <div class="actions">
                                 <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
+                            </div>
+                            <div class="likes">
+                                <a href=""><img class="avatar" src="./assets/anakin.jpg" /></a>
+                                <p>Curtido por <a href="">anakin.skywalker</a> e <a href="">outras 1.987.500 pessoas</a>
+                                </p>
+                            </div>
+                            <div class="caption">
+                                <p>
+                                    <a href="">palpatine.oficial</a>
+                                    <span>
+                                        Não existe UM Lorde Sith vivo mais honesto do que eu!
+                                        <a class="mention" href="">
+                                            #votepalpatine
+                                        </a> <a class="mention" href="">
+                                            #pelademocracia
+                                        </a>
+                                        <a class="mention" href="">
+                                            #liberdade
+                                        </a>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <p class="see-more"><a href="">Ver todos os 665.700 comentários</a></p>
+                            </div>
+                            <div class="posted-at">
+                                <p>HÁ 5 MINUTOS</p>
+                                <p><a href="">Ver tradução</a></p>
                             </div>
                         </div>
-                        <div class="posted-at">
-                            <p>HÁ 2 HORAS</p>
-                            <p><a href="">Ver tradução</a></p>
+                        <div class="post-a-comment">
+                            <a href=""><ion-icon name="happy-outline"></ion-icon></a>
+                            <input type="text" placeholder="Digite algo"></input>
+                            <button>Publicar</button>
                         </div>
-                    </div>
-                    <div class="post-a-comment">
-                        <a href=""><ion-icon name="happy-outline"></ion-icon></a>
-                        <input type="text" placeholder="Digite algo"></input>
-                        <button>Publicar</button>
-                    </div>
-                </article>
-                <article>
-                    <div class="my-user">
-                        <a href=""><img class="avatar" src="./assets/meowed_1.png" /></a>
-                        <p><a href="">meowed</a></p>
-                        <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
-                    </div>
-                    <img src="./assets/gato-telefone_1.png" />
-                    <div class="bottom">
-                        <div class="actions">
-                            <a href=""><ion-icon name="heart-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
+                    </article>
+                    <article>
+                        <div class="my-user">
+                            <a href=""><img class="avatar" src="./assets/kratos.jpg" /></a>
+                            <p><a href="">kleiton.of.war</a></p>
+                            <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
                         </div>
-                        <div class="likes">
-                            <a href=""> <img class="avatar" src="./assets/naruto.jpg" /></a>
-                            <p>Curtido por <a href="">uzumaki.naruto</a> e <a href="">outras 47.000 pessoas</a></p>
+                        <video autoplay loop muted>
+                            <source src="assets/video.mp4" type="video/mp4">
+                            <source src="assets/video.ogv" type="video/ogv">
+                            Não suportado.
+                        </video>
+                        <div class="bottom">
+                            <div class="actions">
+                                <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
+                            </div>
+                            <div class="likes">
+                                <a href=""><img class="avatar" src="./assets/odin.webp" /></a>
+                                <p>Curtido por <a href="">odin_father69</a> e <a href="">outros 7.568 deuses</a></p>
+                            </div>
+                            <div class="caption">
+                                <p>
+                                    <a href="">kleiton.of.war</a>
+                                    <span>
+                                        Atreus 100% pistola brincando com as gaivotas no
+                                        riacho da
+                                        <a class="mention" href="">
+                                            @freya
+                                        </a>
+                                        heauehauehaueh
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <p class="see-more"><a href="">Ver todos os 14 comentários</a></p>
+                                <div class="comment">
+                                    <p><a href="">freya</a><span>Mais uma vez vocês dois matando meus animais
+                                            &#128580;</span>
+                                    </p>
+                                    <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                                </div>
+                                <div class="comment">
+                                    <p><a href="">thor_odin.son</a><span>⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡</span>
+                                    </p>
+                                    <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                            <div class="posted-at">
+                                <p>HÁ 2 HORAS</p>
+                                <p><a href="">Ver tradução</a></p>
+                            </div>
                         </div>
-                        <div class="caption">
-                            <p>
-                                <a href="">meowed</a>
-                                <span>
-                                    Os gatos vão dominar o mundo?
-                                </span>
-                            </p>
+                        <div class="post-a-comment">
+                            <a href=""><ion-icon name="happy-outline"></ion-icon></a>
+                            <input type="text" placeholder="Digite algo"></input>
+                            <button>Publicar</button>
                         </div>
-                        <div class="posted-at">
-                            <p>HÁ 37 SEGUNDOS</p>
-                            <p><a href="">Ver tradução</a></p>
+                    </article>
+                    <article>
+                        <div class="my-user">
+                            <a href=""><img class="avatar" src="./assets/meowed_1.png" /></a>
+                            <p><a href="">meowed</a></p>
+                            <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
                         </div>
+                        <img src="./assets/gato-telefone_1.png" />
+                        <div class="bottom">
+                            <div class="actions">
+                                <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
+                            </div>
+                            <div class="likes">
+                                <a href=""> <img class="avatar" src="./assets/naruto.jpg" /></a>
+                                <p>Curtido por <a href="">uzumaki.naruto</a> e <a href="">outras 47.000 pessoas</a></p>
+                            </div>
+                            <div class="caption">
+                                <p>
+                                    <a href="">meowed</a>
+                                    <span>
+                                        Os gatos vão dominar o mundo?
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="posted-at">
+                                <p>HÁ 37 SEGUNDOS</p>
+                                <p><a href="">Ver tradução</a></p>
+                            </div>
+                        </div>
+                        <div class="post-a-comment">
+                            <a href=""><ion-icon name="happy-outline"></ion-icon></a>
+                            <input type="text" placeholder="Digite algo"></input>
+                            <button>Publicar</button>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="my-user">
+                            <a href=""><img class="avatar" src="./assets/adorableanimals_1.png" /></a>
+                            <p><a href="">adorable_animals</a></p>
+                            <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+                        </div>
+                        <img src="./assets/dog_1.png" />
+                        <div class="bottom">
+                            <div class="actions">
+                                <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
+                                <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
+                            </div>
+                            <div class="likes">
+                                <a href=""> <img class="avatar" src="./assets/memeriagourmet_1.png" /></a>
+                                <p>Curtido por <a href="">memeriagourmet</a> e <a href="">outras 17 pessoas</a></p>
+                            </div>
+                            <div class="caption">
+                                <p>
+                                    <a href="">adorable_animals</a>
+                                    <span>
+                                        Soninho da beleza &#129392; &#129392;
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="posted-at">
+                                <p>HÁ 1 DIA</p>
+                                <p><a href="">Ver tradução</a></p>
+                            </div>
+                        </div>
+                        <div class="post-a-comment">
+                            <a href=""><ion-icon name="happy-outline"></ion-icon></a>
+                            <input type="text" placeholder="Digite algo"></input>
+                            <button>Publicar</button>
+                        </div>
+                    </article>
+                </section>
+            </main>
+            <aside>
+                <section class="my-user">
+                    <a href=""><img class="avatar" src="./assets/piruleta.png" /></a>
+                    <div>
+                        <p><a href="">bixo.piruleta</a></p>
+                        <p>Bixo Piruleta</p>
                     </div>
-                    <div class="post-a-comment">
-                        <a href=""><ion-icon name="happy-outline"></ion-icon></a>
-                        <input type="text" placeholder="Digite algo"></input>
-                        <button>Publicar</button>
+                </section>
+                <section class="suggestions">
+                    <div>
+                        <h6>Sugestões para você</h6>
+                        <button>Ver tudo</button>
                     </div>
-                </article>
-                <article>
-                    <div class="my-user">
+                    <div class="suggestion">
+                        <a href=""><img class="avatar" src="./assets/badvibesmemes_1.png" /></a>
+                        <div>
+                            <p><a href="">badvibesmemes</a></p>
+                            <p>Segue você</p>
+                        </div>
+                        <button>Seguir</button>
+                    </div>
+                    <div class="suggestion">
+                        <a href=""><img class="avatar" src="./assets/chibirdart_1.png" /></a>
+                        <div>
+                            <p><a href="">chibirdart</a></p>
+                            <p>Segue você</p>
+                        </div>
+                        <button>Seguir</button>
+                    </div>
+                    <div class="suggestion">
+                        <a href=""><img class="avatar" src="./assets/razoesparaacreditar_1.png" /></a>
+                        <div>
+                            <p><a href="">razoesparaacreditar</a></p>
+                            <p>Novo no Instagram</p>
+                        </div>
+                        <button>Seguir</button>
+                    </div>
+                    <div class="suggestion">
                         <a href=""><img class="avatar" src="./assets/adorableanimals_1.png" /></a>
-                        <p><a href="">adorable_animals</a></p>
-                        <a href=""><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+                        <div>
+                            <p><a href="">adorable_animals</a></p>
+                            <p>Segue você</p>
+                        </div>
+                        <button>Seguir</button>
                     </div>
-                    <img src="./assets/dog_1.png" />
-                    <div class="bottom">
-                        <div class="actions">
-                            <a href=""><ion-icon name="heart-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="chatbubble-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="paper-plane-outline"></ion-icon></a>
-                            <a href=""><ion-icon name="bookmark-outline"></ion-icon></a>
+                    <div class="suggestion">
+                        <a href=""><img class="avatar" src="./assets/smallcutecats_1.png" /></a>
+                        <div>
+                            <p><a href="">smallcutecats</a></p>
+                            <p>Segue você</p>
                         </div>
-                        <div class="likes">
-                            <a href=""> <img class="avatar" src="./assets/memeriagourmet_1.png" /></a>
-                            <p>Curtido por <a href="">memeriagourmet</a> e <a href="">outras 17 pessoas</a></p>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <a href="">adorable_animals</a>
-                                <span>
-                                    Soninho da beleza &#129392; &#129392;
-                                </span>
-                            </p>
-                        </div>
-                        <div class="posted-at">
-                            <p>HÁ 1 DIA</p>
-                            <p><a href="">Ver tradução</a></p>
-                        </div>
+                        <button>Seguir</button>
                     </div>
-                    <div class="post-a-comment">
-                        <a href=""><ion-icon name="happy-outline"></ion-icon></a>
-                        <input type="text" placeholder="Digite algo"></input>
-                        <button>Publicar</button>
-                    </div>
-                </article>
-            </section>
+                </section>
+                <section class="about">
+                    <ul>
+                        <li><a href="">Sobre</a> •&nbsp;</li>
+                        <li><a href="">Ajuda</a> •&nbsp;</li>
+                        <li><a href="">Imprensa</a> •&nbsp;</li>
+                        <li><a href="">API</a> •&nbsp;</li>
+                        <li><a href="">Carreiras</a> •&nbsp;</li>
+                        <li><a href="">Privacidade</a> •&nbsp;</li>
+                        <li><a href="">Termos</a> •&nbsp;</li>
+                        <li><a href="">Localizações</a> •&nbsp;</li>
+                        <li><a href="">Contas mais relevantes</a> •&nbsp;</li>
+                        <li><a href="">Hashtags</a> •&nbsp;</li>
+                        <li><a href="">Idioma</a></li>
+                    </ul>
+                    <p>
+                        © 2021 INSTAGRAM DO FACEBOOK
+                    </p>
+                </section>
+            </aside>
         </div>
-        <aside class="main-right">
-            <section class="my-user">
-                <a href=""><img class="avatar" src="./assets/piruleta.png" /></a>
-                <div>
-                    <p><a href="">bixo.piruleta</a></p>
-                    <p>Bixo Piruleta</p>
-                </div>
-            </section>
-            <section class="suggestions">
-                <div>
-                    <h6>Sugestões para você</h6>
-                    <button>Ver tudo</button>
-                </div>
-                <div class="suggestion">
-                    <a href=""><img class="avatar" src="./assets/badvibesmemes_1.png" /></a>
-                    <div>
-                        <p><a href="">badvibesmemes</a></p>
-                        <p>Segue você</p>
-                    </div>
-                    <button>Seguir</button>
-                </div>
-                <div class="suggestion">
-                    <a href=""><img class="avatar" src="./assets/chibirdart_1.png" /></a>
-                    <div>
-                        <p><a href="">chibirdart</a></p>
-                        <p>Segue você</p>
-                    </div>
-                    <button>Seguir</button>
-                </div>
-                <div class="suggestion">
-                    <a href=""><img class="avatar" src="./assets/razoesparaacreditar_1.png" /></a>
-                    <div>
-                        <p><a href="">razoesparaacreditar</a></p>
-                        <p>Novo no Instagram</p>
-                    </div>
-                    <button>Seguir</button>
-                </div>
-                <div class="suggestion">
-                    <a href=""><img class="avatar" src="./assets/adorableanimals_1.png" /></a>
-                    <div>
-                        <p><a href="">adorable_animals</a></p>
-                        <p>Segue você</p>
-                    </div>
-                    <button>Seguir</button>
-                </div>
-                <div class="suggestion">
-                    <a href=""><img class="avatar" src="./assets/smallcutecats_1.png" /></a>
-                    <div>
-                        <p><a href="">smallcutecats</a></p>
-                        <p>Segue você</p>
-                    </div>
-                    <button>Seguir</button>
-                </div>
-            </section>
-            <section class="about">
-                <ul>
-                    <li><a href="">Sobre</a> •&nbsp;</li>
-                    <li><a href="">Ajuda</a> •&nbsp;</li>
-                    <li><a href="">Imprensa</a> •&nbsp;</li>
-                    <li><a href="">API</a> •&nbsp;</li>
-                    <li><a href="">Carreiras</a> •&nbsp;</li>
-                    <li><a href="">Privacidade</a> •&nbsp;</li>
-                    <li><a href="">Termos</a> •&nbsp;</li>
-                    <li><a href="">Localizações</a> •&nbsp;</li>
-                    <li><a href="">Contas mais relevantes</a> •&nbsp;</li>
-                    <li><a href="">Hashtags</a> •&nbsp;</li>
-                    <li><a href="">Idioma</a></li>
-                </ul>
-                <p>
-                    © 2021 INSTAGRAM DO FACEBOOK
-                </p>
-            </section>
-        </aside>
-    </main>
-    <nav class="bottom-nav">
-        <ul>
-            <li><a href=""><ion-icon name="home-outline"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="search-outline"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="heart-outline"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="person-outline"></ion-icon></a></li>
-        </ul>
-    </nav>
+        <nav class="bottom-nav">
+            <ul>
+                <li><a href=""><ion-icon name="home-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="heart-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="person-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 
 </html>

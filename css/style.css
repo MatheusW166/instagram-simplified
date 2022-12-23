@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 :root {
-    --black: #000;
+    /* Default */
     --white: #fff;
     --gray-50: #fafafa;
-    --gray-100: #efefef;
     --gray-200: #dbdbdb;
     --gray-300: #c7c7c7;
     --gray-400: #979797;
@@ -14,7 +13,28 @@
     --blue-400: #139ef2;
     --blue-500: #0095f6;
     --blue-800: #00376b;
+
+    /* Dark mode only*/
+    --gray-600: #525252;
+    --gray-650: #313131;
+    --gray-900: #171717;
+    --gray-950: #0f0f0f;
+
+    /* Layout */
     --content-width: 935px;
+}
+
+#root {
+    --background-primary: var(--gray-50);
+    --background-secondary: var(--white);
+    --text-primary: var(--gray-700);
+    --border-separator: var(--gray-200);
+}
+#root:has(#switch-btn:checked) {
+    --background-primary: var(--gray-900);
+    --background-secondary: var(--gray-950);
+    --text-primary: var(--gray-50);
+    --border-separator: var(--gray-700);
 }
 
 * {
@@ -22,8 +42,11 @@
 }
 
 body {
-    background-color: var(--gray-50);
     font-family: "Roboto", sans-serif;
+}
+
+#root {
+    background-color: var(--background-primary);
 }
 
 ion-icon {
@@ -38,7 +61,7 @@ hr {
     border: none;
     width: 1px;
     height: 100%;
-    background-color: #2e2e2e;
+    background-color: var(--border-separator);
 }
 
 button {
@@ -54,14 +77,15 @@ button {
 /* ================================================ */
 /* Cabeçalho */
 header {
-    background-color: var(--white);
-    border-bottom: 1px solid var(--gray-200);
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--border-separator);
     padding: 0 17px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
     width: 100%;
+    color: var(--text-primary);
 }
 
 header > div {
@@ -80,7 +104,7 @@ header > div {
 
 .logo > hr {
     height: 22px;
-    background-color: var(--gray-200);
+    background-color: var(--border-separator);
     margin: 0 10px;
 }
 
@@ -95,8 +119,8 @@ header > div {
 }
 
 .search > input {
-    background: var(--gray-50);
-    border: 1px solid var(--gray-200);
+    background: var(--background-primary);
+    border: 1px solid var(--border-separator);
     border-radius: 3px;
     outline: none;
     flex: 1;
@@ -120,16 +144,17 @@ nav > ul {
 
 /* ================================================ */
 /* Layout principal */
-main {
+.content {
     max-width: var(--content-width);
-    margin: 34px auto;
+    margin: 0 auto;
+    padding: 34px 0;
     display: flex;
     gap: 28px;
     justify-content: center;
     align-items: flex-start;
 }
 
-.main-left {
+main {
     display: flex;
     flex-direction: column;
     width: min(614px, 100%);
@@ -137,7 +162,7 @@ main {
     margin-top: 55px;
 }
 
-.main-right {
+aside {
     margin-top: 55px;
     position: sticky;
     top: 55px;
@@ -150,8 +175,8 @@ main {
 
 /* Stories */
 .stories {
-    background-color: var(--white);
-    border: 1px solid var(--gray-200);
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border-separator);
     border-radius: 3px;
     display: flex;
     padding: 16px 17px;
@@ -174,7 +199,7 @@ main {
     gap: 5px;
     font-size: 12px;
     line-height: 14px;
-    color: var(--gray-700);
+    color: var(--text-primary);
     text-align: center;
     width: 66px;
 }
@@ -220,16 +245,16 @@ main {
 .pubs article {
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: var(--background-secondary);
     border-radius: 3px;
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--border-separator);
 }
 
 .pubs .my-user {
     gap: 14px;
     margin: 0;
     padding: 15px 17px;
-    border-bottom: 1px solid var(--gray-100);
+    border-bottom: 1px solid var(--border-separator);
 }
 
 .pubs .my-user a:last-child {
@@ -260,7 +285,7 @@ main {
 
 .bottom > div:not(:first-child) {
     font-weight: 400;
-    color: var(--gray-700);
+    color: var(--text-primary);
     line-height: 130%;
     font-size: 14px;
 }
@@ -273,6 +298,7 @@ main {
     display: flex;
     gap: 14px;
     margin-bottom: 6px;
+    color: var(--text-primary);
 }
 
 .bottom > .actions a:last-child {
@@ -345,7 +371,8 @@ main {
     padding: 0 17px;
     align-items: center;
     height: 54px;
-    border-top: 1px solid var(--gray-200);
+    border-top: 1px solid var(--border-separator);
+    color: var(--text-primary);
 }
 
 .post-a-comment > input {
@@ -355,7 +382,8 @@ main {
     outline: none;
     border: none;
     font-family: "Roboto", sans-serif;
-    color: var(--gray-700);
+    color: var(--text-primary);
+    background: transparent;
 }
 
 .post-a-comment > input::placeholder {
@@ -386,7 +414,7 @@ main {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: var(--gray-700);
+    color: var(--text-primary);
 }
 
 .my-user > div p:last-child {
@@ -416,7 +444,7 @@ main {
 }
 
 .suggestions button {
-    color: var(--gray-700);
+    color: var(--text-primary);
     font-weight: 600;
     font-size: 12px;
     line-height: 14px;
@@ -436,6 +464,7 @@ main {
 .suggestion > div p:first-child {
     font-size: 14px;
     margin-bottom: 6px;
+    color: var(--text-primary);
 }
 
 .suggestion > div p:last-child {
@@ -494,4 +523,44 @@ nav > ul li:active {
     transform: scale(0.95);
 }
 /* FIM Ajustes de UX */
+/* ================================================ */
+
+/* ================================================ */
+/* Switch theme */
+.switch-theme {
+    user-select: none;
+    height: 100%;
+}
+
+.switch-theme > label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+.switch-theme > label ion-icon {
+    position: absolute;
+    transition: transform ease 0.4s, opacity ease 0.3s;
+}
+
+.switch-theme > label ion-icon:first-child {
+    opacity: 0;
+    transform: scale(0.65) rotateZ(calc(180deg * -1));
+}
+
+#switch-btn {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+#switch-btn:checked + label ion-icon:last-child {
+    opacity: 0;
+    transform: scale(0.65) rotateZ(180deg);
+}
+#switch-btn:checked + label ion-icon:first-child {
+    opacity: 1;
+    transform: scale(1) rotateZ(0);
+}
+
+/* FIM Switch theme */
 /* ================================================ */

@@ -1,9 +1,10 @@
 @media screen and (max-width: 613px) {
-    main {
+    .content {
         margin: 0 auto 54px auto;
+        padding: 0;
     }
 
-    .main-left {
+    main {
         gap: 0;
     }
 
@@ -22,7 +23,7 @@
 
     .stories {
         border: none;
-        background-color: var(--gray-50);
+        background-color: var(--background-primary);
     }
 
     .pubs article {
@@ -44,8 +45,9 @@
         width: 100%;
         height: 54px;
         padding: 0 17px;
-        border-top: 1px solid var(--gray-200);
-        background-color: var(--white);
+        border-top: 1px solid var(--border-separator);
+        background-color: var(--background-secondary);
+        color: var(--text-primary);
     }
 
     .bottom-nav ul {
