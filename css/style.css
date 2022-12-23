@@ -17,8 +17,8 @@
     /* Dark mode only */
     --gray-100: #f5f5f5;
     --gray-350: #b2b2b2;
-    --gray-600: #626262;
-    --gray-650: #5f5f5f;
+    --gray-600: #7a7a7a;
+    --gray-650: #727272;
     --gray-750: #2f2f2f;
     --gray-800: #202020;
     --gray-900: #171717;
@@ -408,6 +408,13 @@ aside {
     font-size: 14px;
 }
 
+.comment .like-btn,
+.comment .like-btn label,
+.comment .like-btn ion-icon {
+    width: 14px;
+    height: 14px;
+}
+
 .posted-at {
     display: flex;
     gap: 10px;
@@ -564,23 +571,27 @@ aside {
 a:active,
 nav > ul li:active,
 button:active,
-.actions ion-icon:active {
+.actions ion-icon:active,
+.comment .like-btn ion-icon:active {
     opacity: 0.6;
 }
 
 .actions ion-icon,
+.comment .like-btn ion-icon,
 nav > ul li {
     cursor: pointer;
     transition: transform ease 0.3s;
 }
 
 .actions ion-icon:hover,
-nav > ul li:hover {
+nav > ul li:hover,
+.comment .like-btn ion-icon:hover {
     transform: scale(1.05);
 }
 
 .actions ion-icon:active,
-nav > ul li:active {
+nav > ul li:active,
+.comment .like-btn ion-icon:active {
     transform: scale(0.95);
 }
 /* FIM Ajustes de UX */
