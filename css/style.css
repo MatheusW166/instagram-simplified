@@ -5,22 +5,25 @@
     --white: #fff;
     --gray-50: #fafafa;
     --gray-200: #dbdbdb;
-    --gray-300: #c7c7c7;
+    --gray-300: #afafaf;
     --gray-400: #979797;
     --gray-500: #8e8e8e;
     --gray-700: #262626;
     --blue-50: #b2dffc;
     --blue-500: #0095f6;
     --blue-800: #00376b;
+    --read-500: #dc2626;
 
     /* Dark mode only */
     --gray-100: #f5f5f5;
-    --gray-350: #a8a8a8;
-    --gray-600: #525252;
-    --gray-650: #4f4f4f;
+    --gray-350: #b2b2b2;
+    --gray-600: #626262;
+    --gray-650: #5f5f5f;
+    --gray-750: #2f2f2f;
+    --gray-800: #202020;
     --gray-900: #171717;
-    --gray-950: #0f0f0f;
     --blue-900: #06344e;
+    --read-400: #ef4444;
 
     /* Where colors are applied (light) */
     --background-primary: var(--gray-50);
@@ -33,6 +36,7 @@
     --button-disabled: var(--blue-50);
     --button-enabled: var(--blue-500);
     --border-separator: var(--gray-200);
+    --heart-red: var(--read-500);
 
     /* Layout */
     --content-width: 935px;
@@ -40,8 +44,8 @@
 
 :root:has(#switch-btn:checked) {
     /* Where colors are applied (dark) */
-    --background-primary: var(--gray-900);
-    --background-secondary: var(--gray-950);
+    --background-primary: var(--gray-800);
+    --background-secondary: var(--gray-900);
     --text-primary: var(--gray-100);
     --text-secondary: var(--gray-350);
     --text-tertiary: var(--gray-600);
@@ -49,7 +53,8 @@
     --tag-mention: var(--blue-500);
     --button-disabled: var(--blue-900);
     --button-enabled: var(--blue-500);
-    --border-separator: var(--gray-700);
+    --border-separator: var(--gray-750);
+    --heart-red: var(--read-400);
 }
 :root:has(#switch-btn:checked) .story-ring > img:last-child {
     filter: saturate(1.8) brightness(1.2);
@@ -337,6 +342,39 @@ aside {
     height: 20px;
 }
 
+.like-btn {
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+
+.like-btn input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.like-btn label,
+.like-btn ion-icon {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 0;
+}
+
+.like-btn ion-icon:nth-child(2) {
+    visibility: hidden;
+    color: var(--heart-red);
+}
+
+.like-btn:has(input:checked) ion-icon:nth-child(1) {
+    visibility: hidden;
+}
+.like-btn:has(input:checked) ion-icon:nth-child(2) {
+    visibility: visible;
+}
+
 .bottom p > a:has(~ span) {
     margin-right: 4px;
 }
@@ -524,21 +562,24 @@ aside {
 /* ================================================ */
 /* Ajustes de UX */
 a:active,
-button:active {
+nav > ul li:active,
+button:active,
+.actions ion-icon:active {
     opacity: 0.6;
 }
 
-.actions a,
+.actions ion-icon,
 nav > ul li {
-    transition: ease 0.2s;
+    cursor: pointer;
+    transition: transform ease 0.3s;
 }
 
-.actions a:hover,
+.actions ion-icon:hover,
 nav > ul li:hover {
     transform: scale(1.05);
 }
 
-.actions a:active,
+.actions ion-icon:active,
 nav > ul li:active {
     transform: scale(0.95);
 }
@@ -547,7 +588,6 @@ nav > ul li:active {
 
 /* ================================================ */
 /* Switch theme */
-
 .switch-theme {
     user-select: none;
     height: 100%;
