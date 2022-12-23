@@ -14,7 +14,7 @@
         width: calc(50% + var(--ig-logo-width) / 2);
     }
 
-    .top-nav > ul li:not(:first-child),
+    .top-nav > ul li:not(:first-child, :nth-child(2)),
     .stories > object,
     .logo > hr,
     .search {

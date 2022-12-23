@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 :root {
-    /* Default */
+    /* Default colors */
     --white: #fff;
     --gray-50: #fafafa;
     --gray-200: #dbdbdb;
@@ -10,31 +10,49 @@
     --gray-500: #8e8e8e;
     --gray-700: #262626;
     --blue-50: #b2dffc;
-    --blue-400: #139ef2;
     --blue-500: #0095f6;
     --blue-800: #00376b;
 
-    /* Dark mode only*/
+    /* Dark mode only */
+    --gray-100: #f5f5f5;
+    --gray-350: #a8a8a8;
     --gray-600: #525252;
-    --gray-650: #313131;
+    --gray-650: #4f4f4f;
     --gray-900: #171717;
     --gray-950: #0f0f0f;
+    --blue-900: #06344e;
+
+    /* Where colors are applied (light) */
+    --background-primary: var(--gray-50);
+    --background-secondary: var(--white);
+    --text-primary: var(--gray-700);
+    --text-secondary: var(--gray-500);
+    --text-tertiary: var(--gray-400);
+    --text-quartenary: var(--gray-300);
+    --tag-mention: var(--blue-800);
+    --button-disabled: var(--blue-50);
+    --button-enabled: var(--blue-500);
+    --border-separator: var(--gray-200);
 
     /* Layout */
     --content-width: 935px;
 }
 
-#root {
-    --background-primary: var(--gray-50);
-    --background-secondary: var(--white);
-    --text-primary: var(--gray-700);
-    --border-separator: var(--gray-200);
-}
-#root:has(#switch-btn:checked) {
+:root:has(#switch-btn:checked) {
+    /* Where colors are applied (dark) */
     --background-primary: var(--gray-900);
     --background-secondary: var(--gray-950);
-    --text-primary: var(--gray-50);
+    --text-primary: var(--gray-100);
+    --text-secondary: var(--gray-350);
+    --text-tertiary: var(--gray-600);
+    --text-quartenary: var(--gray-650);
+    --tag-mention: var(--blue-500);
+    --button-disabled: var(--blue-900);
+    --button-enabled: var(--blue-500);
     --border-separator: var(--gray-700);
+}
+:root:has(#switch-btn:checked) .story-ring > img:last-child {
+    filter: saturate(1.8) brightness(1.2);
 }
 
 * {
@@ -43,9 +61,6 @@
 
 body {
     font-family: "Roboto", sans-serif;
-}
-
-#root {
     background-color: var(--background-primary);
 }
 
@@ -108,8 +123,9 @@ header > div {
     margin: 0 10px;
 }
 
-.instagram-img {
+.instagram-img svg {
     margin-top: 10px;
+    color: inherit;
 }
 
 .search {
@@ -127,11 +143,12 @@ header > div {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+    color: var(--text-primary);
 }
 
 .search > input::placeholder {
     text-align: center;
-    color: var(--gray-400);
+    color: var(--text-tertiary);
 }
 
 nav > ul {
@@ -191,6 +208,10 @@ aside {
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.stories > object + .story {
+    color: var(--text-secondary);
 }
 
 .story {
@@ -317,7 +338,6 @@ aside {
 }
 
 .bottom p > a:has(~ span) {
-    display: inline-block;
     margin-right: 4px;
 }
 
@@ -328,14 +348,14 @@ aside {
 }
 
 .bottom .comments .see-more > a {
-    color: var(--gray-500);
+    color: var(--text-secondary);
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     display: inline-block;
 }
 
 .bottom a.mention {
-    color: var(--blue-800);
+    color: var(--tag-mention);
     font-weight: normal;
 }
 
@@ -363,7 +383,7 @@ aside {
 
 .posted-at p:first-child {
     font-size: 10px;
-    color: var(--gray-500);
+    color: var(--text-secondary);
 }
 
 .post-a-comment {
@@ -387,18 +407,18 @@ aside {
 }
 
 .post-a-comment > input::placeholder {
-    color: var(--gray-500);
+    color: var(--text-secondary);
 }
 
 .post-a-comment > button {
     height: 100%;
-    color: var(--blue-50);
+    color: var(--button-disabled);
     font-weight: 600;
     transition: ease 0.3s;
 }
 
 .post-a-comment > button:hover {
-    color: var(--blue-500);
+    color: var(--button-enabled);
 }
 
 /* FIM Main left */
@@ -419,7 +439,7 @@ aside {
 
 .my-user > div p:last-child {
     font-weight: 300;
-    color: var(--gray-500);
+    color: var(--text-secondary);
     margin-top: 2px;
     font-size: 13px;
 }
@@ -440,7 +460,7 @@ aside {
 }
 
 .suggestions h6 {
-    color: var(--gray-500);
+    color: var(--text-secondary);
 }
 
 .suggestions button {
@@ -469,19 +489,19 @@ aside {
 
 .suggestion > div p:last-child {
     font-weight: 400;
-    color: var(--gray-500);
+    color: var(--text-secondary);
 }
 
 .suggestion > button {
     margin-left: auto;
-    color: var(--blue-400);
+    color: var(--button-enabled);
 }
 
 .about {
     margin-top: 36px;
     font-weight: 400;
     font-size: 11px;
-    color: var(--gray-300);
+    color: var(--text-quartenary);
 }
 
 .about > ul {
@@ -527,15 +547,23 @@ nav > ul li:active {
 
 /* ================================================ */
 /* Switch theme */
+
 .switch-theme {
     user-select: none;
     height: 100%;
+    width: 22px;
+    height: 22px;
+    position: relative;
 }
 
 .switch-theme > label {
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
+    width: 22px;
+    height: 22px;
 }
 
 .switch-theme > label ion-icon {
